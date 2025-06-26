@@ -1,0 +1,14 @@
+{
+    "base_url": "https://www.ainews.com/",
+    "csv_path": "assets/csv/ainews.csv",
+    "json_path": "assets/json/ainews.json",
+    "delay_between_requests": 1,
+    "max_retries": 3,
+    "timeout": 10,
+    "fetch_full_content": true,
+    "user_agents": [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    ]
+}

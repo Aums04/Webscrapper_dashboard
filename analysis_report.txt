@@ -1,0 +1,29 @@
+AI NEWS SCRAPER - ANALYSIS REPORT
+==================================================
+Generated on: 2025-06-26 12:40:48
+
+BASIC STATISTICS:
+Total articles: 17
+Articles with titles: 17
+Articles with descriptions: 4
+Articles with full content: 17
+Average word count: 1159.2
+
+TOP 10 KEYWORDS:
+- ainews: 5
+- headlines: 3
+- voice: 3
+- says: 2
+- firm: 2
+- deepseek: 2
+- aids: 2
+- chinese: 2
+- military: 2
+- evades: 2
+
+SAMPLE TITLES:
+1. Top AiNews.com Headlines
+2. Mira Murati’s New Startup to Build Custom AI Models for Businesses
+3. Verizon Taps Google’s Gemini AI to Improve Customer Service
+4. U.S. Says AI Firm DeepSeek Aids Chinese Military, Evades Chip Controls
+5. Judge Rules Anthropic’s Use of Purchased Books to Train AI Is Fair Use
