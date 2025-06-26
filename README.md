@@ -270,6 +270,3 @@ This project is for educational purposes. Please respect website terms of servic
 ## 🤝 Contributing
 
 Feel free to submit issues and enhancement requests!
-
-# Rename this project to: single_site_scraper
-# This folder now contains only the single-site version for ainews.com scraping
