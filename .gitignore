@@ -63,3 +63,18 @@ scraper.log
 # OS files
 .DS_Store
 Thumbs.db
+
+# Windows batch files (not needed for deployment)
+*.bat
+
+# Environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp

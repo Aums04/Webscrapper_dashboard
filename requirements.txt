@@ -6,3 +6,4 @@ matplotlib
 seaborn
 lxml
 html5lib
+gunicorn

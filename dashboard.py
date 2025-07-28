@@ -10,6 +10,11 @@ class DataViewer:
     def __init__(self, csv_path="assets/csv/ainews.csv", json_path="assets/json/ainews.json"):
         self.csv_path = csv_path
         self.json_path = json_path
+        # Fallback to sample data if main data doesn't exist
+        if not os.path.exists(self.csv_path):
+            sample_path = "assets/csv/sample_data.csv"
+            if os.path.exists(sample_path):
+                self.csv_path = sample_path
     
     @staticmethod
     def get_latest_multisite_csv():
@@ -288,6 +293,8 @@ HTML_TEMPLATE = '''
 '''
 
 if __name__ == '__main__':
+    import os
+    port = int(os.environ.get('PORT', 5000))
     print("Starting AI News Dashboard...")
-    print("Open http://localhost:5000 in your browser")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    print(f"Open http://localhost:{port} in your browser")
+    app.run(debug=False, host='0.0.0.0', port=port)

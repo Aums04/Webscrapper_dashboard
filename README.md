@@ -1,5 +1,10 @@
 # AI News Web Scraper - Enhanced Version
 
+![Python](https://img.shields.io/badge/python-v3.7+-blue.svg)
+![Flask](https://img.shields.io/badge/flask-latest-green.svg)
+![Render](https://img.shields.io/badge/deploy-render-purple.svg)
+![License](https://img.shields.io/badge/license-Educational-orange.svg)
+
 An advanced web scraper for collecting AI news articles from ainews.com with comprehensive data analysis and visualization capabilities.
 
 ## 🚀 Features
@@ -30,24 +35,59 @@ An advanced web scraper for collecting AI news articles from ainews.com with com
 ```
 single_site_scraper/
 ├── single_site_scraper.py   # Main scraper with advanced features
-├── analyze_data.py       # Data analysis and reporting tools
-├── dashboard.py          # Web dashboard for viewing data
-├── config.json          # Configuration settings
-├── requirements.txt     # Python dependencies
-├── run_scraper.bat      # Windows batch script for easy execution
-├── README.md            # This documentation
-├── scraper.log          # Logging output (created after first run)
+├── analyze_data.py          # Data analysis and reporting tools
+├── dashboard.py             # Web dashboard for viewing data
+├── config.json             # Configuration settings
+├── requirements.txt        # Python dependencies
+├── Procfile               # Render.com deployment configuration
+├── .gitignore             # Git ignore rules
+├── README.md              # This documentation
+├── scraper.log            # Logging output (created after first run)
 └── assets/
     ├── csv/
-    │   └── ainews.csv    # Scraped data in CSV format
+    │   └── ainews.csv      # Scraped data in CSV format
     └── json/
-        └── ainews.json   # Scraped data in JSON format with metadata
+        └── ainews.json     # Scraped data in JSON format with metadata
 ```
 
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
 - Python 3.7 or higher
+- Git (for cloning the repository)
+
+### Quick Setup
+
+#### Local Development
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repo-url>
+   cd single_site_scraper
+   ```
+
+2. **Create virtual environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+#### Deploy to Render.com
+1. **Fork this repository** on GitHub
+2. **Connect to Render.com**:
+   - Go to [render.com](https://render.com)
+   - Connect your GitHub account
+   - Select this repository
+   - Choose "Web Service"
+   - Render will automatically detect the Procfile
+3. **Deploy**: Click "Create Web Service"
+4. **Access**: Your dashboard will be available at the provided URL
+
+### Prerequisites
 - Virtual environment (recommended)
 
 ### Quick Setup
@@ -253,7 +293,27 @@ Reports are saved as `analysis_report.txt` for easy sharing.
 - Verify configuration settings in `config.json`
 - Ensure all dependencies are installed
 
-## 🔮 Future Enhancements
+## � Deployment
+
+### Render.com (Recommended)
+This project is ready for one-click deployment on Render.com:
+
+1. Fork this repository
+2. Connect your GitHub to Render.com
+3. Create a new Web Service
+4. Render will automatically:
+   - Detect the `Procfile`
+   - Install dependencies from `requirements.txt`
+   - Start the dashboard with Gunicorn
+
+### Environment Variables
+No additional environment variables are required for basic deployment.
+
+### Live Demo
+<!-- Add your live demo URL here after deployment -->
+🔗 **Live Demo**: [Your Dashboard URL](https://your-app.onrender.com)
+
+## �🔮 Future Enhancements
 
 - [ ] Support for multiple news sources
 - [ ] Sentiment analysis of articles
